@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Russo+One&display=swap" rel="stylesheet" />
+
+    <title>Gravity Music</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="s1">
+        <section>
+          <div class="hero wow fadeIn">
+            <svg class="logo" width="153" height="103" viewBox="0 0 153 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <path d="M81.3372 8.38765L138.878 94.0385L4.78496 77.574L81.3372 8.38765Z" fill="url(#paint0_linear)" />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d"
+                  x="0.784973"
+                  y="0.155365"
+                  width="151.599"
+                  height="101.883"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear" x1="81.3372" y1="8.38765" x2="68.6628" y2="111.612" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#91D5DA" />
+                  <stop offset="1" stop-color="#CEECDA" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <ul class="menu wow slideInDown">
+              <li>MUSIC</li>
+              <li>ARTIST</li>
+              <li class="button"><a href="https://www.google.co.uk/">SIGN UP</a></li>
+            </ul>
+
+            <p class="brandtext wow slideInDown">GRAVITY MUSIC</p>
+
+            <svg class="eclipse" width="654" height="654" viewBox="0 0 654 654" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="327" cy="327" r="327" fill="url(#paint0_linear)" />
+              <defs>
+                <linearGradient id="paint0_linear" x1="327" y1="0" x2="327" y2="654" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#8FD5DE" />
+                  <stop offset="1" stop-color="#63C472" stop-opacity="0.05" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <img class="woman" src="images/woman.png" alt="person listening to music" />
+
+            <p class="text1 wow fadeInLeft" data-wow-delay="1s">Let the music</p>
+
+            <p class="text2 wow fadeInLeft" data-wow-delay="3s">Through</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <audio src="music/windows_no_ocha.mp3" autoplay loop>
+      <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      jQuery(".brandtext").fitText(2, { minFontSize: "10px", maxFontSize: "32px" });
+      jQuery(".menu").fitText(2, { minFontSize: "10px", maxFontSize: "32px" });
+      jQuery(".text2").fitText(0.4, { minFontSize: "38px", maxFontSize: "100px" });
+      jQuery(".text1").fitText(1, { minFontSize: "18px", maxFontSize: "52px" });
+    </script>
+  </body>
+</html>

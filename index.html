@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Russo+One&display=swap" rel="stylesheet" />
+    
+    <script src="/js/amplitude.min.js"></script>
+    <script src="/js/parallax.js"></script>
+
+    </script>
+
+    <title>Gravity Music</title>
+  </head>
+
+  <body>
+    <audio id="audio" class="wow fadeIn" data-wow-delay="3s" controls preload="metadata">
+      <source src="music/windows_no_ocha.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="container">
+      <div id="s1">
+        <section>
+          <div id="scene" data-relative-input="false" data-clip-relative-input="false" data-limit-y="10" data-hover-only="true">
+            <div class="hero wow fadeIn">
+              <svg class="logo" width="153" height="103" viewBox="0 0 153 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                  <path d="M81.3372 8.38765L138.878 94.0385L4.78496 77.574L81.3372 8.38765Z" fill="url(#paint0_linear)" />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d"
+                    x="0.784973"
+                    y="0.155365"
+                    width="151.599"
+                    height="101.883"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                  </filter>
+                  <linearGradient id="paint0_linear" x1="81.3372" y1="8.38765" x2="68.6628" y2="111.612" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#91D5DA" />
+                    <stop offset="1" stop-color="#CEECDA" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <ul class="menu wow slideInDown">
+                <li><a href="#music">MUSIC</a></li>
+                <li>ARTISTS</li>
+                <li class="button"><a href="https://www.google.co.uk/">SIGN UP</a></li>
+              </ul>
+
+              <p class="brandtext wow slideInDown">GRAVITY MUSIC</p>
+
+              <svg class="eclipse layer" data-depth="0.1" width="654" height="654" viewBox="0 0 654 654" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="327" cy="327" r="327" fill="url(#paint0_linear)" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="327" y1="0" x2="327" y2="654" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8FD5DE" />
+                    <stop offset="1" stop-color="#63C472" stop-opacity="0.05" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <img class="woman layer" data-depth="0.2" src="images/woman.png" alt="person listening to music" />
+
+              <p class="text1 wow fadeInLeft layer" data-depth="0.3" data-wow-delay="1s">Let the music</p>
+
+              <p class="text2 wow fadeInLeft layer" data-depth="0.3" data-wow-delay="2s">Through</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="spacer"></div>
+
+      <div id="s2">
+        <section>
+
+
+          <div class="wow fadeIn" data-wow-delay="2s">
+            <svg class="eclipse2" width="210" height="266" viewBox="0 0 210 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="77" cy="133" r="133" fill="url(#paint1_linear)" />
+              <defs>
+                <linearGradient id="paint1_linear" x1="160.5" y1="9.5" x2="23" y2="223.5" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#44429F" />
+                  <stop offset="1" stop-color="#DA2A2A" stop-opacity="0.24" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="music wow fadeIn" data-wow-delay="0.2s" id="music">
+              <img class="man" src="images/man.png" alt="person listening to music" />
+            <h1 class="header wow fadeIn" data-wow-delay="1s">MUSIC</h1>
+            
+            <div id="blue-playlist-container" class="wow fadeIn" data-wow-delay="2s">
+
+                <!-- Amplitude Player -->
+                <div id="amplitude-player">
+    
+                    <!-- Left Side Player -->
+                    <div id="amplitude-left">
+                        <img data-amplitude-song-info="cover_art_url" class="album-art"/>
+              <div class="amplitude-visualization" id="large-visualization">
+    
+                </div>
+                        <div id="player-left-bottom">
+                            <div id="time-container">
+                                <span class="current-time">
+                                    <span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+                                </span>
+                                <div id="progress-container">
+                                    <div class="amplitude-wave-form">
+    
+                            </div>
+                    <input type="range" class="amplitude-song-slider" style="left:0;"/>
+                                    <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+                                    <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+                                </div>
+                                <span class="duration">
+                                    <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+                                </span>
+                            </div>
+    
+                            <div id="control-container">
+                                <div id="repeat-container">
+                                    <div class="amplitude-repeat" id="repeat"></div>
+                                    <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+                                </div>
+    
+                                <div id="central-control-container">
+                                    <div id="central-controls">
+                                        <div class="amplitude-prev" id="previous"></div>
+                                        <div class="amplitude-play-pause" id="play-pause"></div>
+                                        <div class="amplitude-next" id="next"></div>
+                                    </div>
+                                </div>
+    
+                                <div id="volume-container">
+                                    <div class="volume-controls">
+                                        <div class="amplitude-mute amplitude-not-muted"></div>
+                                        <input type="range" class="amplitude-volume-slider"/>
+                                        <div class="ms-range-fix"></div>
+                                    </div>
+                                    <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+                                </div>
+                            </div>
+    
+                            <div id="meta-container">
+                                <span data-amplitude-song-info="name" class="song-name"></span>
+    
+                                <div class="song-artist-album">
+                                    <span data-amplitude-song-info="artist"></span>
+                                    <span data-amplitude-song-info="album"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="amplitude-right">
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container">
+    
+                                </div>
+                                <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">Thin Floors and Tall Ceilings</span>
+                            <span class="song-artist">Odesza</span>
+                            </div>
+                            <span class="song-duration"></span>
+                        </div>
+
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container">
+    
+                                </div>
+                                <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">I Love You</span>
+                            <span class="song-artist">Woodkid</span>
+                            </div>
+                            <span class="song-duration"></span>
+                        </div>
+
+                        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+                            <div class="song-now-playing-icon-container">
+                                <div class="play-button-container">
+    
+                                </div>
+                                <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+                            </div>
+                            <div class="song-meta-data">
+                                <span class="song-title">9PM</span>
+                            <span class="song-artist">Steve Void ft. Caroline Pennell</span>
+                            </div>
+                            <span class="song-duration"></span>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+        </section>
+      </div>
+
+      <div id="spacer2"></div>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/functions.js"></script>
+    <link rel="stylesheet" href="css/animate.css" />
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+    </script>
+
+    <script>
+      jQuery(".brandtext").fitText(1, { minFontSize: "10px", maxFontSize: "32px" });
+      jQuery(".menu").fitText(2, { minFontSize: "10px", maxFontSize: "32px" });
+      jQuery(".text2").fitText(0.4, { minFontSize: "18px", maxFontSize: "100px" });
+      jQuery(".text1").fitText(1, { minFontSize: "8px", maxFontSize: "52px" });
+      jQuery(".header").fitText(1, { minFontSize: "8px", maxFontSize: "52px" });
+    </script>
+
+    <script>
+    
+      
+
+    Amplitude.init({
+        songs: [
+          {
+            name: "Thin Floors And Tall Ceilings",
+            artist: "ODESZA",
+            album: "A Moment Apart",
+            url: "music/Thin_Floors_And_Tall_Ceilings.mp3",
+            cover_art_url:
+              "https://cdn.shopify.com/s/files/1/0773/0721/products/AMomentApartCD_1000x1000_ec64c02a-a51d-433f-a631-96f0cb9e103f_1024x1024.jpg?v=1497231329g",
+          },
+          {
+            name: "I Love You",
+            artist: "Woodkid",
+            album: "The Golden Age",
+            url: "music/I_Love_You.mp3",
+            cover_art_url:
+              "https://upload.wikimedia.org/wikipedia/en/f/f4/The_Golden_Age_Album_Art.jpg",
+          },
+          {
+            name: "9PM",
+            artist: "Steve Void ft. Caroline Pennell",
+            album: "",
+            url: "music/steve-void-9pm-ft-caroline-pennell.mp3",
+            cover_art_url:
+              "https://images.genius.com/0452c1145bb9bfa29058efd7a1ff86de.1000x1000x1.jpg",
+          }
+        ]
+      });
+      
+      </script>
+  </body>
+</html>
