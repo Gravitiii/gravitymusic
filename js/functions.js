@@ -17,10 +17,10 @@ for (var i = 0; i < songElements.length; i++) {
         Ensure that on mouseover, CSS styles don't get messed up for active songs.
     */
   songElements[i].addEventListener("mouseover", function() {
-    this.style.backgroundColor = "#00A0FF";
+    this.style.backgroundColor = "#24cc7eb6";
 
-    this.querySelectorAll(".song-meta-data .song-title")[0].style.color = "#FFFFFF";
-    this.querySelectorAll(".song-meta-data .song-artist")[0].style.color = "#FFFFFF";
+    this.querySelectorAll(".song-meta-data .song-title")[0].style.color = "#000";
+    this.querySelectorAll(".song-meta-data .song-artist")[0].style.color = "#000";
 
     if (!this.classList.contains("amplitude-active-song-container")) {
       this.querySelectorAll(".play-button-container")[0].style.display = "block";
