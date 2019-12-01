@@ -73,6 +73,11 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  transition: 1s;
+}
+
+.artist-box:hover {
+  background: #8cb8e2;
 }
 
 .artist-box img {

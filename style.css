@@ -82,6 +82,12 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.artist-box:hover {
+  background: #8cb8e2;
 }
 
 .artist-box img {
